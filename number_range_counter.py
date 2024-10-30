@@ -1,19 +1,16 @@
-#Define/initialize counters for each range
-#Loop to get the user input
-#Check if the input is a valid integer
-#Check the range of the input number
-#Display the numbers
 
+#Define/initialize counters for each range
 numbers_1_10 = 0
 numbers_11_20 = 0
 numbers_21_30 = 0
 numbers_31_40 = 0
 numbers_41_50 = 0
-
+#Loop to get the user input
 while True:
     try:
+#Check if the input is a valid integer 
         number = int(input("Please enter a number between 1 and 50: "))
-
+#Check the range of the input number
         if 1 <= number <= 10:
             numbers_1_10 += 1
         elif 11 <= number <= 20:
@@ -30,7 +27,7 @@ while True:
     except ValueError:
         print("Invalid input. Now heading to Input Summary")
         break
-
+#Display the numbers
 print("Input Summary: ")
 print(f"1-10: {numbers_1_10}")
 print(f"11-20: {numbers_11_20}")
