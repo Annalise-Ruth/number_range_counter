@@ -25,11 +25,15 @@ while True:
         elif 41 <= number <= 50:
             numbers_41_50 += 1
         else:
-            print("Invalid input. Heading to Input Summary")
+            print("Invalid input. Now heading to Input Summary")
             break
     except ValueError:
-        print("Invalid input. Heading to Input Summary")
+        print("Invalid input. Now heading to Input Summary")
         break
 
-
-   
+print("Input Summary: ")
+print(f"1-10: {numbers_1_10}")
+print(f"11-20: {numbers_11_20}")
+print(f"21-30 {numbers_21_30}")
+print(f"31-40: {numbers_31_40}")
+print(f"41-50: {numbers_41_50}")  
